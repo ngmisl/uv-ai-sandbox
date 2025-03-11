@@ -1,5 +1,5 @@
 """
-AI Sandbox - Safely run AI models and execute AI-generated code with strict security boundaries.
+UV AI Sandbox - Safely run AI models and execute AI-generated code with strict security boundaries.
 
 This package provides tools for creating sandboxed environments to safely run AI models
 and execute AI-generated code with strict security boundaries.

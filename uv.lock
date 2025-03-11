@@ -7,52 +7,6 @@ resolution-markers = [
 ]
 
 [[package]]
-name = "ai-sandbox"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "path" },
-    { name = "pathlib2" },
-    { name = "pathvalidate" },
-    { name = "psutil" },
-    { name = "pydantic" },
-    { name = "restrictedpython" },
-]
-
-[package.optional-dependencies]
-dev = [
-    { name = "bandit" },
-    { name = "black" },
-    { name = "build" },
-    { name = "pytest" },
-    { name = "ruff" },
-    { name = "safety" },
-    { name = "twine" },
-]
-linux = [
-    { name = "python-prctl" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "bandit", marker = "extra == 'dev'", specifier = ">=1.7.5" },
-    { name = "black", marker = "extra == 'dev'", specifier = ">=25.1.0" },
-    { name = "build", marker = "extra == 'dev'", specifier = ">=1.0.0" },
-    { name = "path", specifier = ">=17.1.0" },
-    { name = "pathlib2", specifier = ">=2.3.7" },
-    { name = "pathvalidate", specifier = ">=3.0.0" },
-    { name = "psutil", specifier = ">=7.0.0" },
-    { name = "pydantic", specifier = ">=2.0.0" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.3.5" },
-    { name = "python-prctl", marker = "extra == 'linux'", specifier = ">=1.8.1" },
-    { name = "restrictedpython", specifier = ">=8.0" },
-    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.9.10" },
-    { name = "safety", marker = "extra == 'dev'", specifier = ">=3.0.0" },
-    { name = "twine", marker = "extra == 'dev'", specifier = ">=4.0.0" },
-]
-provides-extras = ["dev", "linux"]
-
-[[package]]
 name = "annotated-types"
 version = "0.7.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1017,3 +971,49 @@ sdist = { url = "https://files.pythonhosted.org/packages/aa/63/e53da845320b757bf
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl", hash = "sha256:1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df", size = 128369 },
 ]
+
+[[package]]
+name = "uv-ai-sandbox"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "path" },
+    { name = "pathlib2" },
+    { name = "pathvalidate" },
+    { name = "psutil" },
+    { name = "pydantic" },
+    { name = "restrictedpython" },
+]
+
+[package.optional-dependencies]
+dev = [
+    { name = "bandit" },
+    { name = "black" },
+    { name = "build" },
+    { name = "pytest" },
+    { name = "ruff" },
+    { name = "safety" },
+    { name = "twine" },
+]
+linux = [
+    { name = "python-prctl" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "bandit", marker = "extra == 'dev'", specifier = ">=1.7.5" },
+    { name = "black", marker = "extra == 'dev'", specifier = ">=25.1.0" },
+    { name = "build", marker = "extra == 'dev'", specifier = ">=1.0.0" },
+    { name = "path", specifier = ">=17.1.0" },
+    { name = "pathlib2", specifier = ">=2.3.7" },
+    { name = "pathvalidate", specifier = ">=3.0.0" },
+    { name = "psutil", specifier = ">=7.0.0" },
+    { name = "pydantic", specifier = ">=2.0.0" },
+    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.3.5" },
+    { name = "python-prctl", marker = "extra == 'linux'", specifier = ">=1.8.1" },
+    { name = "restrictedpython", specifier = ">=8.0" },
+    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.9.10" },
+    { name = "safety", marker = "extra == 'dev'", specifier = ">=3.0.0" },
+    { name = "twine", marker = "extra == 'dev'", specifier = ">=4.0.0" },
+]
+provides-extras = ["dev", "linux"]
